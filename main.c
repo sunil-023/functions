@@ -1,33 +1,23 @@
 #include<stdio.h>
 
-void positive_negative (int);
-void even_odd (int);
+int factorial (int);
 
 main()
 {
-    int a;
+    int n;
     
-    printf("a=");
-    scanf("%d",&a);
+    printf("n");
+    scanf("%d",&n);
     
-    positive_negative(a);
-    even_odd(a);
+    printf("the factorial of the %d is %d",n,factorial(n));
 }
 
-void positive_negative (int x)
+int factorial (int x)
 {
-    if (x>=0)
-	printf("the number is positive");
-	
-	else
-	printf("the number is negative");
-}
-
-void even_odd (int x)
-{
-    if (x%2==0)
-	printf("\nthe number is even");
-	
-	else
-	printf("\nthe number is odd"); 
+        int i,n,f=1;
+    for(i=1;i<=n;i++)
+    {
+        f=f*i;
+    }
+    return(f);
 }
