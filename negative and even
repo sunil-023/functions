@@ -1,0 +1,30 @@
+#include<stdio.h>
+void even(void);
+void positivity(void);
+void even()
+{
+	int a;
+	printf("enter the number:");
+	scanf("%d",&a);
+	if(a%2==0)
+	  printf("%d is even",a);
+	else
+	  printf("%d is odd",a);
+}
+
+void positivity()
+{
+    int a;
+	printf("\n enter the number:");
+	scanf("%d",&a);
+	if(a<=0)
+	  printf("%d is negative",a);
+	else
+	  printf("%d is positive",a);
+}
+
+int main()
+{
+    even();
+    positivity();
+}
